@@ -1,0 +1,323 @@
+
+/* common */
+:root {
+  --sunrise-font-family: 'Lora', serif;
+  --sunrise-font-color:   rgb(199, 182, 182);
+}
+
+body {
+  font-family: var(--sunrise-font-family);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  opacity: .8;
+}
+
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  opacity: .8;
+}
+
+
+/* header */
+
+.navbar-brand {
+  font-size: 32px;
+}
+
+#logo {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.showUp {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#section1
+{
+  height: 100vh;
+  min-height: 500px;
+  padding: 100px 0;
+  transition: background-color 1s;
+  align-items: flex-start;
+}
+
+#section2,
+#section3 {
+  padding: 20px 0;
+  /* height: 180vh; */
+  /* min-height: 500px; */
+  transition: background-color 1s;
+  align-items: flex-start;
+}
+
+#carousel {
+  /* width: 100%; */
+  height: 70vh;
+  min-height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 0s, opacity 5s;
+}
+
+#carousel img {
+  height: 100%;
+  min-height: 400px;
+}
+
+#secondLogo {
+  text-align: center;
+}
+
+#sunriseLogo {
+  font-size: 32px;
+  color: var(--sunrise-font-color);
+  opacity: 0;
+  transform: translateY(100px);
+  animation: sunrise 3s ease .4s forwards;
+  padding: 16px 0;
+}
+
+#sunriseLogo i {
+  font-size: 32px;
+}
+
+#toTop {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--sunrise-font-color);
+}
+
+/* about & menu */
+
+.photos {
+  justify-content: space-between;
+}
+
+
+#imgAbout1,
+#imgMenu1 {
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+  min-height: 300px;
+  transition: transform 1s, opacity 1s;
+}
+
+#imgAbout2,
+#imgMenu2 {
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+  min-height: 300px;
+  transition: transform 1s, opacity 1s;
+}
+
+#imgAbout1 img,
+#imgMenu1 img  {
+  width: 100%;
+  object-fit: cover;
+}
+
+#imgAbout2 img,
+#imgMenu2 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.description  {
+  text-align: center;
+  min-height: 300px;
+  margin: auto 0;
+  padding: 32px;
+  transition: transform 1s, opacity 1s;
+}
+
+.description div  {
+  transition: transform 1s, opacity 1s;
+}
+
+.description h1 {
+  font-size: 32px;
+  transition: transform 1s, opacity 1s;
+}
+
+.description h2 {
+  font-size: 24px;
+}
+
+.description p {
+  font-family: 'Explora', cursive;
+  font-size: 24px;
+}
+
+/* menu */
+
+#accordion {
+  margin-bottom: 16px;
+}
+
+  /* image effect */
+
+  .image-wrap {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-wrap img {
+    width: 100%;
+    animation: move 40s ease;
+    position: absolute;
+  }
+
+
+/* footer */
+
+#footer-nav {
+  padding: 16px;
+}
+
+#footer-nav .category {
+  color: orange;
+  margin-bottom: 8px;
+}
+
+#footer-nav div {
+  margin-bottom: 16px;
+}
+#footer-nav div p {
+  color: grey;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 16px;
+}
+
+#footer-nav p i {
+  padding-right: 8px;
+}
+
+p span {
+  text-decoration: underline;
+}
+
+footer small {
+  text-align-last: left;
+  padding: 16px;
+  margin-left: 16px;
+  color: grey;
+}
+
+
+  @media (min-width: 600px) {
+    
+    #carousel {
+      /* width: 90%; */
+      width: 100%;
+      max-width: 800px;
+    }
+  
+    #section2,
+   #section3 {
+    padding: 100px 20px;
+     display: flex;
+     /* height: 100vh; */
+   }
+
+   #section2 {
+     flex-direction: row-reverse;
+   }
+
+    .photos {
+      display: flex;
+      align-items: center;
+    }
+
+    #imgAbout1 img,
+    #imgAbout2 img,
+    #imgMenu1 img,
+    #imgMenu2 img {
+    height: 100%;
+    transform: none;
+    }
+
+    #footer-nav {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    #footer-nav div {
+      width: 40%;
+    }
+    #footer-nav div + div {
+      width: 30%;
+      margin-left: 16px;
+    }
+
+  }
+
+  /* large scren */
+@media (min-width: 1081px) {
+  #section1 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #secondLogo {
+    display: block;
+    padding: 16px;
+    line-height: 500px;
+    width: 40%;
+  }
+
+
+  .photos {
+    width: 50%;
+  }
+
+  .description {
+      width: 50%;
+      padding: 32px;
+    }
+
+}
+
+/* sunrise */
+@keyframes sunrise {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ken burn effect */
+@keyframes move {
+  0% {
+    transform-origin: bottom left;
+    transform: scale(1.0);
+  }
+  20% {
+    transform-origin: bottom right;
+    transform: scale(1.2);
+    }
+  60% {
+    transform: scale(6.0);
+    }
+   100% {
+    transform: scale(1.0);
+  }
+}
+
