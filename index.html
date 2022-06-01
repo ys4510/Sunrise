@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&family=Londrina+Outline&family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Sunrise</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main >
+      <div id="section1" class="container-fluid">
+        <div id="carousel" class="image-wrap col showUp"><img src="img/heriyakei.jpg" alt="Tokyo nightview"></div>
+        <div id="secondLogo">
+          <div id="sunriseLogo">
+              <i class="bi bi-brightness-alt-high">Sunrise</i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="about">
+      <div id="section2" class="container-fluid">
+        <div class="description showUp">
+          <h1 class="">About</h1>
+          <div id="desc" class="">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Pariatur, corporis aperiam! Dolore ullam accusantium consequatur iste culpa. Animi, dolores unde eligendi nobis labore aperiam incidunt nesciunt, repellendus ducimus, sunt voluptatum.</p>
+          </div>
+        </div>
+        <div class="photos">
+          <div id="imgAbout1" class="showUp"><img src="img/coffee-cafe-art.jpg" alt="cafe art"></div>
+          <div id="imgAbout2" class="showUp"><img src="img/coffee-beans-s.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="menu">
+      <div id="section3" class="container-fluid">
+        <div class="description showUp">
+          <h1 class="">Menu</h1>
+          <div class="desc">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>Voluptate commodi temporibus maxime? Omnis molestiae debitis ratione exercitationem suscipit v</p>
+          </div>
+          <div class="countainer mt-3">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header">
+                  <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    + Drink
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <h4>AFFOGATO</h4>
+                    <h4>AMERICANO</h4>
+                    <h4>CAFFÈ LATTE</h4>
+                    <h4>CAFFÈ MOCHA</h4>
+                    <h4>CAFÈ AU LAIT</h4>
+                    <h4>COLD BREW COFFEE</h4>
+                    <h4>ESPRESSO</h4>
+                    <h4>TEA</h4>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                    + Food
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <h4>Roasted Turkey & Avocado BLT</h4>
+                    <h4>Tuna Salad Sandwich</h4>
+                    <h4>Teriyaki Chicken Bowl</h4>
+                    <h4>Ceasar Salad</h4>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    + Bakery
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <h4>Oatmeal Raisin Cookie</h4>
+                    <h4>Peanut Butter Chocolate Cookie</h4>
+                    <h4>Cheese Cake</h4>
+                    <h4>Blueberry Cheese Cake</h4>
+                    <h4></h4>
+                  </div>
+                </div>
+            </div>
+          </div> 
+          <!-- end of accordion -->
+        </div>
+        <!-- end of container for accordion -->
+      </div>
+      <div class="photos">
+        <div id="imgMenu1" class="showUp"><img src="img/cafe-machine-s.png" alt="cafe art"></div>
+        <div id="imgMenu2" class="showUp"><img src="img/choco-cake-s.png" alt=""></div>
+      </div>
+    </section>
+
+
+    <footer class="bg-light text-dark">
+      <div id="footer-nav">
+        <div class="aboutUs">
+          <p class="category">ABOUT US</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit quia quasi quod dicta quo minus ratione amet? Quibusdam repellendus labore voluptatibus ex quaerat odio a perspiciatis cupiditate minus maxime!</p>
+        </div>
+        <div class="contactInfo">
+          <p class="category">CONTACT INFO</p>
+          <p><i class="bi bi-geo-alt-fill"></i>1234 XYZ street, San Francisco, CA 10000-0000</p>
+          <p><i class="bi bi-telephone-fill"></i>+1 987 654 3210</p>
+          <p><i class="bi bi-envelope-fill"></i>xyz@sample.com</p>
+        </div>
+        <div class="hours">
+          <p class="category">OPENING HOURS</p>
+          <p><span>MONDAY - FRIDAY</span></p>
+          <p>08:00 AM - 09:00 PM<br><br></p>
+          <p><span>SATURDAY - SUNDAY</span></p>
+          <p>10:00 AM - 09:00 PM</p>
+        </div>
+      </div>
+      <small>©2022 Sunrise. All rights reserved.</small>
+    </footer>
+
+    <a href="#">
+      <i id="toTop" class="bi bi-arrow-up-square-fill"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
