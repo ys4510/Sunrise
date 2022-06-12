@@ -59,8 +59,8 @@ i:hover {
 }
 
 #carousel {
-  /* width: 100%; */
-  height: 70vh;
+  /* height: 70vh; */
+  height: 100%;
   min-height: 300px;
   overflow: hidden;
   object-fit: cover;
@@ -70,6 +70,7 @@ i:hover {
 #carousel img {
   height: 100%;
   min-height: 400px;
+  object-fit: cover;
 }
 
 #secondLogo {
@@ -81,7 +82,7 @@ i:hover {
   color: var(--sunrise-font-color);
   opacity: 0;
   transform: translateY(100px);
-  animation: sunrise 3s ease .4s forwards;
+  animation: sunrise .6s ease .4s forwards;
   padding: 16px 0;
 }
 
@@ -111,7 +112,7 @@ i:hover {
   width: 100%;
   height: 60vh;
   min-height: 300px;
-  transition: transform 1s, opacity 1s;
+  transition: transform .4s, opacity .4s;
 }
 
 #imgAbout2,
@@ -120,7 +121,7 @@ i:hover {
   width: 100%;
   height: 60vh;
   min-height: 300px;
-  transition: transform 1s, opacity 1s;
+  transition: transform .4s, opacity .4s;
 }
 
 #imgAbout1 img,
@@ -140,16 +141,16 @@ i:hover {
   min-height: 300px;
   margin: auto 0;
   padding: 32px;
-  transition: transform 1s, opacity 1s;
+  transition: transform .4s, opacity .4s;
 }
 
 .description div  {
-  transition: transform 1s, opacity 1s;
+  transition: transform .4s, opacity .4s;
 }
 
 .description h1 {
   font-size: 32px;
-  transition: transform 1s, opacity 1s;
+  transition: transform .4s, opacity .4s;
 }
 
 .description h2 {
@@ -183,6 +184,9 @@ i:hover {
 
 
 /* footer */
+footer {
+  background-color: rgba(250, 250, 250, .5);
+}
 
 #footer-nav {
   padding: 16px;
@@ -197,10 +201,10 @@ i:hover {
   margin-bottom: 16px;
 }
 #footer-nav div p {
-  color: grey;
   font-size: 14px;
   margin: 0;
   padding-left: 16px;
+  color: var(--sunrise-font-color);
 }
 
 #footer-nav p i {
@@ -215,18 +219,12 @@ footer small {
   text-align-last: left;
   padding: 16px;
   margin-left: 16px;
-  color: grey;
+  color: var(--sunrise-font-color);
 }
 
 
   @media (min-width: 600px) {
-    
-    #carousel {
-      /* width: 90%; */
-      width: 100%;
-      max-width: 800px;
-    }
-  
+   
     #section2,
    #section3 {
     padding: 100px 20px;
